@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.vlist-cont {
+  overflow: auto;
+  position: relative;
+  padding: 0;
+}
+.vlist-cont__fulldummy {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 1px;
+}
+.vlist-cont__mloading {
+  position: absolute;
+  display: none;
+  height: auto;
+  z-index: 10;
+}
+
+.row-wrap {
+  position: absolute;
+  border-bottom: 1px solid black;
+  width: 100%;
+  font-size: 14px;
+  padding: 5px;
+  background: #fff;
+}
+.row-wrap__id {
+  color: black;
+  font-weight: bold;
+}
+.row-wrap__key {
+  color: #444;
+}
+.row-wrap__uuid {
+  color: green;
+  font-size: 12px;
+}
+.row-wrap__date {
+  color: #627080;
+  font-size: 12px;
+}
+
+.list-load {
+  position: fixed;
+  width: 20vw;
+  height: 20vw;
+  top: calc(50vh - 10vw);
+  left: 40vw;
+  background: url(../img/progress_rolling_blue.svg) no-repeat center;
+  background-size: contain;
+  z-index: 10;
+}
